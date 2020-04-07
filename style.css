@@ -1,0 +1,25 @@
+body {
+    background: #fefefe;
+}
+
+.mainHeader {
+    color: tomato;
+}
+
+.sectionHeader {
+    color: #1460aa;
+}
+
+p {
+    color: darkblue;
+}
+
+/*
+    !impotant nadpisuje domyślne style nawet jeśli są w HTML
+    color: darkblue !important;
+ */
+
+/* stylowanie po ID 
+ #pamietniczek {
+    background: hotpink;
+} */
