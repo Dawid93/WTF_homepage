@@ -3,28 +3,90 @@ body {
     color: #333;
 }
 
-.mainHeader {
+/* #region NavigationRegion */
+.navigation {
+    width: 100%;
+    position: fixed;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
+
+.navigation__link {
+    color: #1a936f;
+}
+/* #endregion */
+
+.header {
+
+}
+
+.header__title {
     color: tomato;
 }
 
-.sectionHeader, .diaryHeader {
+.main {
+    width: 100%;
+    max-width: 700px;
+    margin: 32px auto;
+    padding-top: 50px;
+}
+
+
+
+/* #region About region */
+.about {
+}
+
+.about__header {
     color: #1460aa;
 }
 
-.header {
-    color: yellow;
+.about__paragraph {
+    padding: 16px;
 }
 
-.heading {
-    color: #00487c;
+.about__link {
+    color: #1a936f;
+}
+/* #endregion */
+
+/* #region Diary regio */
+.diary {
+
 }
 
-.thirdHeader {
+.diary__header {
+    color: #1460aa;
+}
+
+.post {
+
+}
+
+.post__header {
     color: #0496FF;
 }
 
-.link {
+.post__link {
     color: #1a936f;
+}
+
+.post__paragraph {
+    padding: 0 16px;
+}
+/* #endregion */
+
+
+.footer {
+    background: #333;
+    color: white;
+    min-height: 50px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /*
