@@ -5,18 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="style.css" rel="stylesheet" type="text/css"> 
-    <link href="normalize.css" rel="stylesheet" type="text/css"> 
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="normalize.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
     <header class="site-header">
         <nav class="navigation">
-            <ul class="navigation__list"> 
+            <ul class="navigation__list navigation__list--js">
                 <li class="navigation__item"><a class="navigation__link" href="index.html">Strona główna</a></li>
                 <li class="navigation__item"><a class="navigation__link" href="subpage.html">Artykuł</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="subpage.html">Podstrona</a></li>
             </ul>
         </nav>
+        <button class="navigation__switcher navigation__switcher--js" aria-label="Menu">&#9776;</button>
     </header>
 
     <main class="main">
@@ -26,7 +28,9 @@
 
         <section class="about">
             <h2 class="about__header">Kim jestem?</h2>
-            <p class="about__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis ea, consequuntur, nostrum iste repudiandae consequatur illo veritatis minus odio, quibusdam quo quaerat laudantium dolorem consectetur sit provident rerum placeat?
+            <p class="about__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores perspiciatis
+                ea, consequuntur, nostrum iste repudiandae consequatur illo veritatis minus odio, quibusdam quo quaerat
+                laudantium dolorem consectetur sit provident rerum placeat?
                 <br>
                 <a class="about__link" href="#pamietniczek">Przejdź to pamiętniczka</a>
             </p>
@@ -34,23 +38,28 @@
 
         <section class="diary" id="pamietniczek">
             <h2 class="diary__header">Pamiętniczek</h2>
+            <div class="grid">
+                <section class="post">
+                    <h3 class="post__header">Jak stworzyć prawidłowego HTML'a?</h3>
+                    <p class="post__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet facere
+                        aperiam exercitationem eligendi magni culpa, nam rerum. Quo necessitatibus ipsa nam et vero
+                        accusantium facilis. Totam in sit magni cumque!
+                        <br>
+                        <a class="post__link" href="subpage.html">Przejdź to artykułu</a>
+                    </p>
+                </section>
 
-            <section class="post">
-                <h3 class="post__header">Jak stworzyć prawidłowego HTML'a?</h3>
-                <p class="post__paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet facere aperiam exercitationem eligendi magni culpa, nam rerum. Quo necessitatibus ipsa nam et vero accusantium facilis. Totam in sit magni cumque!
-                    <br>
-                    <a class="post__link" href="subpage.html">Przejdź to artykułu</a>
-                </p>
-            </section>
-
-            <section class="post">
-                <h3 class="post__header">Czy nagrywanie szkolenia jest trudne?</h3>
-                <p class="post__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae, exercitationem unde. Qui esse dolorum, ipsam rem illum corporis iste tempore ut aliquid. Animi nihil ducimus nobis, minus aspernatur atque, tenetur sequi nostrum incidunt
-                    facilis eligendi officiis possimus quam quod doloribus?
-                    <br>
-                    <a class="post__link" href="subpage.html">Przejdź to artykułu</a>
-                </p>
-            </section>
+                <section class="post">
+                    <h3 class="post__header">Czy nagrywanie szkolenia jest trudne?</h3>
+                    <p class="post__paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae,
+                        exercitationem unde. Qui esse dolorum, ipsam rem illum corporis iste tempore ut aliquid. Animi
+                        nihil ducimus nobis, minus aspernatur atque, tenetur sequi nostrum incidunt
+                        facilis eligendi officiis possimus quam quod doloribus?
+                        <br>
+                        <a class="post__link" href="subpage.html">Przejdź to artykułu</a>
+                    </p>
+                </section>
+            </div>
         </section>
     </main>
 
